@@ -72,7 +72,7 @@ const Hero = () => {
               <div className="inset-shadow-2xs ring-black inset-shadow-white/20 bg-background relative mx-auto max-w-6xl overflow-hidden rounded-2xl border p-4 shadow-lg shadow-zinc-950/15 ring-1">
                 <Image
                   className="bg-black object-cover relative rounded-2xl block"
-                  src="/dash.jpg"
+                  src="/dash-2.jpg"
                   alt="app screen"
                   width="1080"
                   height="900"
