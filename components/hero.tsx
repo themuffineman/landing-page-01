@@ -4,7 +4,7 @@ import { MovingBorder, MovingLabel } from "./moving-border";
 import Image from "next/image";
 import { AnimatedGroup } from "./motion-primitives/animated-group";
 import type { Variants } from "framer-motion";
-import GradientButton from "./GradientButton";
+import GradientButton from "./HeroButton";
 import { LogoMarquee } from "./logo-marquee";
 
 const transitionVariants: { item: Variants } = {

@@ -1,3 +1,6 @@
+import Link from "next/link";
+import MainButton from "../MainButton";
+
 export const ProPlan = () => {
   return (
     <div className="lg:col-span-6 animate-fadeInRight animation-delay-300">
@@ -125,12 +128,9 @@ export const ProPlan = () => {
         </ul>
 
         <div className="mt-6">
-          <a
-            href="#demo"
-            className="inline-flex w-full items-center justify-center rounded-lg px-4 py-2 text-xs font-medium text-white tracking-tight bg-linear-to-r from-emerald-500 to-green-500 hover:from-emerald-500 hover:to-green-600 transition-all duration-200"
-          >
-            Start Pro Trial
-          </a>
+          <Link href="#">
+            <MainButton className="rounded-full">Start Pro Trial</MainButton>
+          </Link>
         </div>
       </div>
     </div>

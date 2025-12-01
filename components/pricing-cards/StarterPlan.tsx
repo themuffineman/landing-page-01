@@ -1,3 +1,6 @@
+import Link from "next/link";
+import SecondaryButton from "../SecondaryButton";
+
 export const StarterPlan = () => {
   return (
     <div className="lg:col-span-6  animate-fadeInLeft z-1 animation-delay-200">
@@ -113,12 +116,11 @@ export const StarterPlan = () => {
         </ul>
 
         <div className="mt-6">
-          <a
-            href="#demo"
-            className="inline-flex w-full items-center justify-center rounded-lg px-4 py-2 text-xs font-medium text-white tracking-tight bg-white/10 hover:bg-white/20"
-          >
-            Start Free Trial
-          </a>
+          <Link href="#">
+            <SecondaryButton className="rounded-full">
+              Start Free Trial
+            </SecondaryButton>
+          </Link>
         </div>
       </div>
     </div>

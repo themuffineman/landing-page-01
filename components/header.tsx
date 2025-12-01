@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import MainButton from "./MainButton";
 
 const menuItems = [
   { name: "Features", href: "#" },
@@ -58,15 +59,11 @@ const Header = () => {
               </div>
 
               <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit lg:border-l lg:pl-6">
-                <Button
-                  className="rounded-full inline-flex w-full items-center justify-center text-white px-4 py-2 text-xs font-medium tracking-tight bg-linear-to-r from-emerald-500 to-green-500 hover:from-emerald-500 hover:to-green-600 transition-all duration-200"
-                  asChild
-                  size="default"
-                >
-                  <Link href="#">
+                <Link href="#">
+                  <MainButton className="rounded-full">
                     <span>Get Started</span>
-                  </Link>
-                </Button>
+                  </MainButton>
+                </Link>
               </div>
             </div>
           </div>
