@@ -10,7 +10,7 @@ export default function GradientButton({
       <div className="relative z-10 flex items-center gap-3">
         <div className="flex-1 text-left">
           <p className="group-hover:text-white transition-colors duration-300 text-sm font-bold font-geist drop-shadow-sm text-white">
-            Start Free Trial
+            {children}
           </p>
         </div>
         <div className="opacity-40 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300">

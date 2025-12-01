@@ -7,7 +7,6 @@ import { Menu, X } from "lucide-react";
 
 const menuItems = [
   { name: "Features", href: "#" },
-  { name: "Solution", href: "#" },
   { name: "Pricing", href: "#" },
   { name: "About", href: "#" },
 ];
@@ -28,7 +27,7 @@ const Header = () => {
                 aria-label="home"
                 className="flex items-center space-x-2"
               >
-                <Logo />
+                <Logo className="size-10" />
               </Link>
 
               <button
@@ -58,14 +57,9 @@ const Header = () => {
               </div>
 
               <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit lg:border-l lg:pl-6">
-                <Button asChild variant="outline" size="sm">
+                <Button className="rounded-full" asChild size="default">
                   <Link href="#">
-                    <span>Login</span>
-                  </Link>
-                </Button>
-                <Button asChild size="sm">
-                  <Link href="#">
-                    <span>Login</span>
+                    <span>Get Started</span>
                   </Link>
                 </Button>
               </div>

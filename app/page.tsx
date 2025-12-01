@@ -6,7 +6,7 @@ import Pricing from "@/components/pricing";
 
 export default function Page() {
   return (
-    <div className="relative w-full dark bg-neutral-950">
+    <div className="relative w-full font-bricolage  dark bg-neutral-950">
       <div className="absolute top-0 z-0 h-full w-full bg-neutral-900/10 bg-[radial-gradient(ellipse_20%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
       <div className="pointer-events-none absolute h-full w-full overflow-hidden opacity-50 perspective-[200px]">
         <div className="absolute inset-0 rotateX(35deg)">
