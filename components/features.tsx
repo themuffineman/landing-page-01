@@ -5,7 +5,8 @@ export default function FeaturesSection() {
   return (
     <section className="py-16 md:py-32 dark bg-transparent">
       <div className="mx-auto max-w-5xl px-6">
-        <div className="relative">
+        <div className="relative flex flex-col items-center">
+          <h2 className="text-6xl font-bold text-white mb-16">Features</h2>
           <div className="relative z-10 grid grid-cols-6 gap-3">
             <Card className="relative col-span-full flex overflow-hidden lg:col-span-2">
               <CardContent className="relative m-auto size-fit pt-6">
@@ -22,11 +23,11 @@ export default function FeaturesSection() {
                     />
                   </svg>
                   <span className="mx-auto block w-fit text-5xl font-semibold">
-                    100%
+                    Data
                   </span>
                 </div>
                 <h2 className="mt-6 text-center text-3xl font-semibold">
-                  Customizable
+                  Data-driven Insights
                 </h2>
               </CardContent>
             </Card>
@@ -86,11 +87,11 @@ export default function FeaturesSection() {
                 </div>
                 <div className="relative z-10 mt-6 space-y-2 text-center">
                   <h2 className="group-hover:text-secondary-950 text-lg font-medium transition dark:text-white">
-                    Secure by default
+                    Real-time Analytics
                   </h2>
                   <p className="text-foreground">
-                    Provident fugit and vero voluptate. magnam magni doloribus
-                    dolores voluptates a sapiente nisi.
+                    Track your key metrics as they happen and respond to changes
+                    instantly.
                   </p>
                 </div>
               </CardContent>
@@ -181,11 +182,11 @@ export default function FeaturesSection() {
                 </div>
                 <div className="relative z-10 mt-14 space-y-2 text-center">
                   <h2 className="text-lg font-medium transition">
-                    Faster than light
+                    Beautiful Dashboards
                   </h2>
                   <p className="text-foreground">
-                    Provident fugit vero voluptate. magnam magni doloribus
-                    dolores voluptates inventore nisi.
+                    Visualize your data with our stunning and intuitive
+                    dashboards.
                   </p>
                 </div>
               </CardContent>
@@ -198,11 +199,11 @@ export default function FeaturesSection() {
                   </div>
                   <div className="space-y-2">
                     <h2 className="group-hover:text-secondary-950 text-lg font-medium text-zinc-800 transition dark:text-white">
-                      Faster than light
+                      Collaborative Reports
                     </h2>
                     <p className="text-foreground">
-                      Provident fugit vero voluptate. Voluptates a sapiente
-                      inventore nisi.
+                      Share insights with your team and collaborate on reports
+                      with ease.
                     </p>
                   </div>
                 </div>
@@ -263,11 +264,11 @@ export default function FeaturesSection() {
                   </div>
                   <div className="space-y-2">
                     <h2 className="text-lg font-medium transition">
-                      Keep your loved ones safe
+                      Team Collaboration
                     </h2>
                     <p className="text-foreground">
-                      Voluptate. magnam magni doloribus dolores voluptates a
-                      sapiente inventore nisi.
+                      Work together with your team to analyze data and make
+                      informed decisions.
                     </p>
                   </div>
                 </div>

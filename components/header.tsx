@@ -28,6 +28,7 @@ const Header = () => {
                 className="flex items-center space-x-2"
               >
                 <Logo className="size-10" />
+                <span className="text-xl font-bold">Analytics</span>
               </Link>
 
               <button
