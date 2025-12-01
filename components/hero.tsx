@@ -70,9 +70,9 @@ const Hero = () => {
           >
             <div className="mask-b-from-85%  dark relative -mr-56 mt-8 overflow-hidden px-2 sm:mr-0 sm:mt-12 md:mt-20">
               <div className="inset-shadow-2xs ring-black inset-shadow-white/20 bg-background relative mx-auto max-w-6xl overflow-hidden rounded-2xl border p-4 shadow-lg shadow-zinc-950/15 ring-1">
-                <img
-                  className="bg-background object-cover relative rounded-2xl block"
-                  src="/dashboard.svg"
+                <Image
+                  className="bg-black  object-cover relative rounded-2xl block"
+                  src="/dash.jpg"
                   alt="app screen"
                   width="2700"
                   height="1440"
