@@ -1,20 +1,27 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque, Geist, Geist_Mono } from "next/font/google";
+import {
+  Bricolage_Grotesque,
+  Geist,
+  Geist_Mono,
+  IBM_Plex_Mono,
+  Instrument_Serif,
+  TikTok_Sans,
+} from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const sansFont = TikTok_Sans({
+  variable: "--font-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const serifFont = Instrument_Serif({
+  variable: "--font-serif",
   subsets: ["latin"],
+  weight: ["400"],
 });
-const bricolage = Bricolage_Grotesque({
-  variable: "--font-bricolage-grotesque",
-  subsets: ["latin"],
-  display: "swap",
+const monoFont = IBM_Plex_Mono({
+  variable: "--font-mono",
+  weight: ["100", "200", "300", "400", "500"],
 });
 
 export const metadata: Metadata = {
@@ -30,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${bricolage.variable} ${geistMono.variable} antialiased`}
+        className={`${sansFont.variable} ${monoFont.variable} ${serifFont.variable} antialiased`}
       >
         {children}
       </body>
