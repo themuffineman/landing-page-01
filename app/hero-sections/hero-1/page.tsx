@@ -7,28 +7,6 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-const HeroImage = () => {
-  return (
-    <motion.div
-      initial={{ filter: "blur(20px)", opacity: 0, scale: 0.8 }}
-      animate={{ filter: "blur(0px)", opacity: 1, scale: 1 }}
-      transition={{ duration: 1, ease: "easeIn" }}
-      className="w-full px-4"
-    >
-      <div className="justify-self-center mx-auto md:justify-self-end">
-        <Image
-          src="/hero-dash.png"
-          className="rounded-md "
-          width={900}
-          height={500}
-          alt="Dashboard Preview"
-          priority
-        />
-      </div>
-    </motion.div>
-  );
-};
-
 const logos = [
   "/logos/canvalogo.svg",
   "/logos/awslogo.svg",
@@ -185,11 +163,14 @@ const ChangelogBadge = () => {
 export const HeroText = () => {
   return (
     <>
-      <h1 className="text-3xl md:text-4xl lg:text-6xl tracking-tighter text-white text-center px-4">
+      <h1 className="text-3xl md:text-4xl lg:text-6xl tracking-tighter text-black text-center px-4">
         Transform your data into <br />
-        <span className="font-serif font-light italic">powerful</span> insights
+        <span className="font-serif text-orange-500 font-light italic">
+          powerful
+        </span>{" "}
+        insights
       </h1>
-      <p className="max-w-lg text-sm md:text-base text-white text-center px-4">
+      <p className="max-w-lg text-sm md:text-base text-black text-center px-4">
         Make data-driven decisions with our advanced analytics platform. Get
         real-time insights, beautiful visualizations, and actionable
         intelligence that grows with your business.
@@ -210,6 +191,28 @@ const HeroActions = () => {
         </Link>
       </div>
     </div>
+  );
+};
+
+const HeroImage = () => {
+  return (
+    <motion.div
+      initial={{ filter: "blur(20px)", opacity: 0, scale: 0.8 }}
+      animate={{ filter: "blur(0px)", opacity: 1, scale: 1 }}
+      transition={{ duration: 1, ease: "easeIn" }}
+      className="w-full px-4"
+    >
+      <div className="justify-self-center mx-auto md:justify-self-end">
+        <Image
+          src="/hero-dash.png"
+          className="rounded-md "
+          width={900}
+          height={500}
+          alt="Dashboard Preview"
+          priority
+        />
+      </div>
+    </motion.div>
   );
 };
 
